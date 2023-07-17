@@ -2,7 +2,7 @@ import os
 import pandas as pd
 from tqdm import tqdm
 
-csvs = [csv for csv in os.listdir('data') if '.csv' in csv]
+csvs = [csv for csv in os.listdir('../data') if '.csv' in csv]
 
 df = pd.DataFrame()
 
