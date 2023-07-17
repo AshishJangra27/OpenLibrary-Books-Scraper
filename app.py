@@ -7,7 +7,7 @@ csvs = [csv for csv in os.listdir('OpenLibrary-Books-Scraper/data') if '.csv' in
 df = pd.DataFrame()
 
 for csv in tqdm(csvs):
-    df_ = pd.read_csv('data/' + csv )
+    df_ = pd.read_csv('OpenLibrary-Books-Scraper/data/' + csv )
     df_['category_'] = csv.split('.csv')[0]
     df = pd.concat((df,df_))
     
